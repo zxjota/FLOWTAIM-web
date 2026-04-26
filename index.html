@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FLOWTAIM</title>
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --secondary: #8b5cf6;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+            padding: 40px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+        
+        .app-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .app-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .app-name {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        h1 {
+            color: var(--dark);
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        .effective-date {
+            color: var(--gray);
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .intro-box {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--dark);
+            font-size: 20px;
+            margin: 28px 0 16px 0;
+            padding-top: 20px;
+            border-top: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: #475569;
+        }
+        
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: #475569;
+            position: relative;
+            padding-left: 5px;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .data-table th {
+            background-color: #f1f5f9;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .data-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 35px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .contact-title {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        
+        .email-link {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--primary);
+            padding-bottom: 2px;
+        }
+        
+        .email-link:hover {
+            color: var(--secondary);
+            border-bottom-style: solid;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .button-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .button-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+        }
+        
+        .button-secondary {
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .button-secondary:hover {
+            background-color: #f0f9ff;
+        }
+        
+        .info-badge {
+            display: inline-block;
+            background-color: #fef3c7;
+            color: #92400e;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 5px 0 15px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .app-name {
+                font-size: 28px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-brand">
+                <div class="app-icon">F</div>
+                <div class="app-name">FLOWTAIM</div>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Effective Date: April 26, 2026 | Last Updated: April 26, 2026</p>
+        </div>
+        
+        <div class="intro-box">
+            <p>This Privacy Policy describes how FLOWTAIM ("we", "us", or "our") collects, uses, and protects your information when you use our application. Your privacy is important to us, and we are committed to transparency about our data practices.</p>
+        </div>
+        
+        <h2><i class="fas fa-info-circle"></i> Information Collection</h2>
+        <p>We collect information to provide and improve FLOWTAIM:</p>
+        <ul>
+            <li><strong>Account Data:</strong> Information you provide when creating an account, such as email address and username.</li>
+            <li><strong>App Usage Data:</strong> How you interact with FLOWTAIM, features used, and time spent in the application.</li>
+            <li><strong>Device Information:</strong> Device type, operating system, app version, and unique device identifiers.</li>
+            <li><strong>Content Data:</strong> Information you input, create, or upload within the application.</li>
+        </ul>
+        
+        <h2><i class="fas fa-cogs"></i> How We Use Your Information</h2>
+        <p>We use collected information for the following purposes:</p>
+        <div class="data-table">
+            <table>
+                <tr>
+                    <th>Purpose</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Service Delivery</td>
+                    <td>Provide, maintain, and improve FLOWTAIM's core functionality</td>
+                </tr>
+                <tr>
+                    <td>Personalization</td>
+                    <td>Customize your experience and provide relevant features</td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td>Send important updates, security alerts, and support messages</td>
+                </tr>
+                <tr>
+                    <td>Analytics</td>
+                    <td>Analyze usage patterns to enhance app performance and features</td>
+                </tr>
+                <tr>
+                    <td>Security</td>
+                    <td>Protect against fraud, abuse, and unauthorized access</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h2><i class="fas fa-share-alt"></i> Information Sharing</h2>
+        <p>We do not sell your personal data. We may share information in limited circumstances:</p>
+        <ul>
+            <li>With service providers who assist in operating our application (under strict confidentiality agreements)</li>
+            <li>When required by law, regulation, or legal process</li>
+            <li>In connection with a business transfer, such as a merger or acquisition</li>
+            <li>With your explicit consent for specific sharing purposes</li>
+        </ul>
+        
+        <h2><i class="fas fa-shield-alt"></i> Data Security</h2>
+        <p>We implement appropriate technical and organizational security measures to protect your information. These include encryption, access controls, and regular security assessments. However, no electronic transmission method is 100% secure.</p>
+        
+        <h2><i class="fas fa-user-check"></i> Your Rights & Choices</h2>
+        <div class="info-badge">You have control over your data</div>
+        <p>Depending on your location, you may have rights to:</p>
+        <ul>
+            <li>Access, correct, or delete your personal information</li>
+            <li>Export your data in a portable format</li>
+            <li>Object to or restrict certain processing activities</li>
+            <li>Withdraw consent where processing is based on consent</li>
+            <li>Lodge a complaint with a supervisory authority</li>
+        </ul>
+        <p>To exercise these rights, contact us using the information below.</p>
+        
+        <h2><i class="fas fa-database"></i> Data Retention</h2>
+        <p>We retain your information only as long as necessary for the purposes outlined in this policy, unless a longer retention period is required by law. When we no longer need your data, we securely delete or anonymize it.</p>
+        
+        <h2><i class="fas fa-child"></i> Children's Privacy</h2>
+        <p>FLOWTAIM is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we learn we have collected such information, we will delete it promptly.</p>
+        
+        <h2><i class="fas fa-globe"></i> International Transfers</h2>
+        <p>Your information may be transferred to and processed in countries outside your residence. We implement safeguards to ensure your data remains protected according to this Privacy Policy.</p>
+        
+        <h2><i class="fas fa-sync-alt"></i> Policy Updates</h2>
+        <p>We may update this Privacy Policy periodically. We will notify you of material changes by posting the updated policy with a new effective date. Continued use of FLOWTAIM after changes constitutes acceptance of the updated policy.</p>
+        
+        <div class="contact-section">
+            <div class="contact-title">Contact Information</div>
+            <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:lindaheaberline609@gmail.com" class="email-link">lindaheaberline609@gmail.com</a></p>
+            <p>We typically respond to inquiries within 30 business days.</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 FLOWTAIM. All rights reserved.</p>
+            <p>This Privacy Policy applies to the FLOWTAIM mobile application and related services.</p>
+            <div class="action-buttons">
+                <a href="javascript:window.print()" class="button button-secondary">
+                    <i class="fas fa-print"></i> Print Policy
+                </a>
+                <a href="javascript:history.back()" class="button button-primary">
+                    <i class="fas fa-arrow-left"></i> Back to App
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add view tracking
+            if (typeof localStorage !== 'undefined') {
+                const policyViews = parseInt(localStorage.getItem('flowtaim_policy_views') || '0');
+                localStorage.setItem('flowtaim_policy_views', (policyViews + 1).toString());
+                
+                // Add view count badge
+                if (policyViews > 0) {
+                    const badge = document.createElement('div');
+                    badge.className = 'info-badge';
+                    badge.style.cssText = 'background-color: #dbeafe; color: #1e40af; margin-top: 20px;';
+                    badge.innerHTML = `<i class="fas fa-eye"></i> Policy viewed ${policyViews + 1} time${policyViews + 1 !== 1 ? 's' : ''}`;
+                    document.querySelector('.footer').prepend(badge);
+                }
+            }
+            
+            // Email click tracking
+            const emailLink = document.querySelector('.email-link');
+            if (emailLink) {
+                emailLink.addEventListener('click', function() {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'Privacy Policy',
+                            'event_label': 'Contact Email Click'
+                        });
+                    }
+                });
+            }
+            
+            // Smooth scroll for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 20,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Print styling
+            const printStyles = `
+                @media print {
+                    body { background: white; }
+                    .container { 
+                        box-shadow: none; 
+                        border: 1px solid #ddd;
+                    }
+                    .action-buttons, .intro-box { 
+                        break-inside: avoid; 
+                    }
+                }
+            `;
+            const styleSheet = document.createElement("style");
+            styleSheet.textContent = printStyles;
+            document.head.appendChild(styleSheet);
+        });
+    </script>
+</body>
+</html>
